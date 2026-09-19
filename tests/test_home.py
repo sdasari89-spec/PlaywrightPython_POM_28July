@@ -20,6 +20,7 @@ def test_validatepageComponents(page : Page, navigateToAmazon):
 @pytest.mark.home
 @pytest.mark.smoke
 @pytest.mark.regression
+#@allure.feature("home screen testcases")
 def test_validateTheVisibilityOfPageComponents(page:Page, navigateToAmazon):
 
     #searchBar= page.get_by_placeholder("Search Amazon.in")

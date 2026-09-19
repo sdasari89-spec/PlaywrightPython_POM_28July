@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6555","test_validateTheVisibilityOfPageComponents[chromium]","tests","2026-09-11","failed","2026-09-11","","test_home","",""
+"","1021","test_validatepageComponents[chromium]","tests","2026-09-11","passed","2026-09-11","","test_home","",""

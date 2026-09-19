@@ -1,0 +1,28 @@
+1. HTML reportin
+pip intall pytest-html 
+pytest -m home --headed -v -n 2 --html=report.html
+start report.html
+
+2. Allure report
+pip install allure-pytest
+pytest -m home --headed -v -n 2 --alluredir=allure-results
+result will capature in a json format within allure-results folder
+
+method 1: to see the results---command-->allure serve give path
+  allure serve allure-results
+     this command didnt work me so checked 
+  allure --version
+  npm --version
+  then npm install -g allure-commandline
+
+  now again check allure --version --got 2.43.0
+  then allure serve allure-results
+
+  method 2: generate new allure report folder inside will have index.html
+  allure generate allure-results -o allure-report --clean
+now launch the allure report-->  allure open allure-report
+
+note: to create artifacts 2nd method will be helpfull because allure-results have all the cookies which got created. 
+by using these cookies  new folder created with only reports in allure-report folder
+
+report will open in local host cllose it using ctrl+c
