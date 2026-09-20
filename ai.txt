@@ -6,7 +6,7 @@ MCP Servers: Playwright Mcp Servers
 
 AI
 
-
+Database:-- database automation will be done by pyhton not with playwright
 app database
 
 1. account table

@@ -7,19 +7,19 @@ def test_getAPI(playwright):
     #basic auth
     # context = playwright.request.new_context(http_credentials={"username":"admin","password":"admin"})
     context = playwright.request.new_context()
-    responseToken= context.post("https://dummyjson.com/auth/login")
-    responseTokenBody = responseToken.json()
-    print(responseTokenBody["token"])
+    # responseToken= context.post("https://dummyjson.com/auth/login")
+    # responseTokenBody = responseToken.json()
+    # print(responseTokenBody["token"])
     # response=context.get("https://dummyjson.com/products?limit=5", headers={"Authorization":"Bearer 123456789"})
-    response=context.get("https://dummyjson.com/products?limit=5", headers={"x-api-key":"123456789"})
+    response=context.get("https://dummyjson.com/products?limit=5", headers={"x-api-key":"21132434"})
     assert response.status == 200
     print(response)
     # print(response.json())
     responseBody = response.json()
     print(responseBody["products"][0]["title"])
     assert responseBody["products"][0]["title"]=="Essence Mascara Lash Princess"
-
-#@pytest.mark.api
+    
+@pytest.mark.api
 def test_postApi(playwright): #here playwright is a playwright fixture
     #first need to create session using context and with request method  we are creating a API session
     context = playwright.request.new_context() #request.new_context() is request method 
@@ -94,6 +94,8 @@ def test_postApi(playwright): #here playwright is a playwright fixture
         # browser = playwright.chromium.launch()
         # context = browser.new_context()
         # page= context.new_page()
-
-
+# with used before pytest now in pytest we use fixtures
+#in api we use context for request for UI we use browser like chromium,context and page
+#it doesnot allow db automation 
+#codegept for db and mobile automation validation but only on java script like cypress
     
