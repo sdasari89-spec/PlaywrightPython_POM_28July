@@ -1,0 +1,21 @@
+LLM ---- Large language Model
+ex: chatgpt, gemini, openAi, copilot, claude
+
+MCP Servers: Playwright Mcp Servers
+
+
+AI
+
+Database:-- database automation will be done by pyhton not with playwright
+app database
+
+1. account table
+2. product
+
+===================
+1. sqlite3
+2. sql
+3.Oracle
+4. postgress
+5.Snowflake
+6.MongoDB........
